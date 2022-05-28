@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    border: 1px solid;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    background-color: chartreuse;
+    margin-bottom: 30px;
+}
