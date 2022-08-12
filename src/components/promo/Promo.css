@@ -1,7 +1,7 @@
 .banner {
     margin-top: 0;
     padding: 260px 0 100px 0;
-    background-image: url('src/assets/img/banner-bg.png');
+    background-image: url('../../assets/img/banner-bg.png');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,22 +31,21 @@
     line-height: 1.5em;
     width: 96%;
 }
-.banner button {
+.banner .connect-button {
     color: #fff;
     font-weight: 700;
     font-size: 20px;
-    margin-top: 60px;
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
 }
-.banner button svg {
+.banner .connect-button svg {
     font-size: 25px;
     margin-left: 10px;
     transition: 0.3s ease-in-out;
     line-height: 1;
 }
-.banner button:hover svg {
+.banner .connect-button:hover svg {
     margin-left: 25px;
 }
 .banner img {
@@ -66,3 +65,18 @@
 .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
 }
+
+.banner .custom-button {
+    margin: 0 50px 0 0;
+}
+
+.banner .custom-button svg {
+    margin-left: 10px;
+}
+
+.banner .button-container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+

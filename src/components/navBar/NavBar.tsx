@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import { Container, Nav, Navbar } from 'react-bootstrap';
-
 import './NavBar.css';
 
 import facebook from 'assets/img/icon_facebook.svg';
@@ -41,7 +40,7 @@ export const NavBar = (): ReturnComponentType => {
         <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" className="navbar-logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon" />
@@ -105,7 +104,7 @@ export const NavBar = (): ReturnComponentType => {
                                 <img src={facebook} alt="facebook" />
                             </a>
                         </div>
-                        <button className="vvd" type="button">
+                        <button className="custom-button" type="button">
                             <span>Let&apos;s Connect</span>
                         </button>
                     </span>

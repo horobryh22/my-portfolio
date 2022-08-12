@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 import { Col, Container, Row } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowRightCircle, Download } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
+
+import './Promo.css';
 
 import 'animate.css';
 
@@ -10,7 +12,7 @@ import headerImg from 'assets/img/header-img.svg';
 import { ReturnComponentType } from 'types';
 
 export const Promo = (): ReturnComponentType => {
-    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
+    const toRotate = ['Frontend Developer'];
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -73,11 +75,11 @@ export const Promo = (): ReturnComponentType => {
                                         Welcome to my Portfolio
                                     </span>
                                     <h1>
-                                        Hi! I&apos;m Ilya{' '}
+                                        Hi! I&apos;m Ilya <br />
                                         <span
                                             className="txt-rotate"
                                             data-period="1000"
-                                            data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                                            data-rotate='[ "Frontend Developer"]'
                                         >
                                             <span className="wrap">{text}</span>
                                         </span>
@@ -89,9 +91,14 @@ export const Promo = (): ReturnComponentType => {
                                         unknown printer took a galley of type and
                                         scrambled it to make a type specimen book.
                                     </p>
-                                    <button type="button">
-                                        Let’s Connect <ArrowRightCircle size={25} />
-                                    </button>
+                                    <div className="button-container">
+                                        <button className="custom-button" type="button">
+                                            Download CV <Download size={25} />
+                                        </button>
+                                        <button type="button" className="connect-button">
+                                            Let’s Connect <ArrowRightCircle size={25} />
+                                        </button>
+                                    </div>
                                 </div>
                             )}
                         </TrackVisibility>
