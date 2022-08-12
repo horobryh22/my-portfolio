@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
-import classes from './NavBar.module.css';
+import './NavBar.css';
 
 import facebook from 'assets/img/icon_facebook.svg';
 import instagram from 'assets/img/icon_instagram.svg';
@@ -38,61 +38,63 @@ export const NavBar = (): ReturnComponentType => {
     });
 
     return (
-        <Navbar
-            expand="md"
-            className={`${classes.navbar} ${scrolled ? classes.scrolled : ''}`}
-        >
-            <Container className={classes.container}>
-                <Navbar.Brand href="#home" className={classes.navbarBrand}>
+        <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
+            <Container>
+                <Navbar.Brand href="#home">
                     <img src={logo} alt="logo" />
                 </Navbar.Brand>
-                {/* <Navbar.Toggle */}
-                {/*    aria-controls="basic-navbar-nav" */}
-                {/*    className={classes.navbarToggler} */}
-                {/* > */}
-                {/*    <span className={classes.togglerIcon} /> */}
-                {/* </Navbar.Toggle> */}
-                <Navbar.Collapse id="basic-navbar-nav" className={classes.navbarCollapse}>
+                <Navbar.Toggle aria-controls="basic-navbar-nav">
+                    <span className="navbar-toggler-icon" />
+                </Navbar.Toggle>
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link
                             href="#home"
-                            className={`${classes.defaultLink} ${
-                                activeLink === 'home' ? classes.activeLink : ''
-                            }`}
+                            className={
+                                activeLink === 'home'
+                                    ? 'active navbar-link'
+                                    : 'navbar-link'
+                            }
                             onClick={() => onUpdateActiveLink('home')}
                         >
                             Home
                         </Nav.Link>
                         <Nav.Link
                             href="#about"
-                            className={`${classes.defaultLink} ${
-                                activeLink === 'about' ? classes.activeLink : ''
-                            }`}
+                            className={
+                                activeLink === 'about'
+                                    ? 'active navbar-link'
+                                    : 'navbar-link'
+                            }
                             onClick={() => onUpdateActiveLink('about')}
                         >
                             About
                         </Nav.Link>
                         <Nav.Link
                             href="#skills"
-                            className={`${classes.defaultLink} ${
-                                activeLink === 'skills' ? classes.activeLink : ''
-                            }`}
+                            className={
+                                activeLink === 'skills'
+                                    ? 'active navbar-link'
+                                    : 'navbar-link'
+                            }
                             onClick={() => onUpdateActiveLink('skills')}
                         >
                             Skills
                         </Nav.Link>
                         <Nav.Link
                             href="#projects"
-                            className={`${classes.defaultLink} ${
-                                activeLink === 'projects' ? classes.activeLink : ''
-                            }`}
+                            className={
+                                activeLink === 'projects'
+                                    ? 'active navbar-link'
+                                    : 'navbar-link'
+                            }
                             onClick={() => onUpdateActiveLink('projects')}
                         >
                             Projects
                         </Nav.Link>
                     </Nav>
-                    <span className={classes.navbarText}>
-                        <div className={classes.socialIcon}>
+                    <span className="navbar-text">
+                        <div className="social-icon">
                             <a href="#1">
                                 <img src={instagram} alt="instagram" />
                             </a>
@@ -103,11 +105,7 @@ export const NavBar = (): ReturnComponentType => {
                                 <img src={facebook} alt="facebook" />
                             </a>
                         </div>
-                        <button
-                            className={classes.navbarButton}
-                            type="button"
-                            onClick={() => console.log('connect')}
-                        >
+                        <button className="vvd" type="button">
                             <span>Let&apos;s Connect</span>
                         </button>
                     </span>
