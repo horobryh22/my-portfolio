@@ -10,10 +10,6 @@ import { PromoText } from 'components';
 import { ReturnComponentType } from 'types';
 
 export const PromoContent = ({ text }: PromoContentType): ReturnComponentType => {
-    const handleClick = (): void => {
-        document.location = '#connect';
-    };
-
     return (
         <Col xs={12} md={6} xl={7}>
             <PromoText text={text} />
@@ -23,9 +19,11 @@ export const PromoContent = ({ text }: PromoContentType): ReturnComponentType =>
                         Download CV <Download size={25} />
                     </button>
                 </a>
-                <button type="button" className="button" onClick={handleClick}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                </button>
+                <a href="#connect">
+                    <button type="button" className="button">
+                        Let’s Connect <ArrowRightCircle size={25} />
+                    </button>
+                </a>
             </div>
         </Col>
     );

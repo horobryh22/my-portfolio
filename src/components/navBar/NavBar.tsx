@@ -34,10 +34,6 @@ export const NavBar = (): ReturnComponentType => {
         };
     });
 
-    const handleClick = (): void => {
-        document.location = '#connect';
-    };
-
     return (
         <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
             <Container>
@@ -54,13 +50,11 @@ export const NavBar = (): ReturnComponentType => {
                     />
                     <span className="navbar-text">
                         <SocialLinks />
-                        <button
-                            className="nvb-button"
-                            type="button"
-                            onClick={handleClick}
-                        >
-                            <span>Let&apos;s Connect</span>
-                        </button>
+                        <a href="#connect">
+                            <button className="nvb-button" type="button">
+                                <span>Let&apos;s Connect</span>
+                            </button>
+                        </a>
                     </span>
                 </Navbar.Collapse>
             </Container>

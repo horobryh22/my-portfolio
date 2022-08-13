@@ -24,7 +24,4 @@
   "include": [
     "src"
   ],
-  "compilerOptions": {
-    "typeRoots": ["./src/types"]
-  }
 }
