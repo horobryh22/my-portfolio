@@ -7,14 +7,18 @@
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
+    padding: 50px 50px;
     margin-top: -45px;
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .about h2 {
     font-size: 45px;
     font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .about p {
@@ -23,4 +27,70 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about-me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.61), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about-me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: 0.3s ease-in-out;
+}
+
+.about-me-image:hover {
+    transform: rotate(0deg);
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about-card {
+    background: rgba(0, 0, 0, 0.41);
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.about-card:hover {
+    background: transparent;
+    cursor: default;
+}
+
+.about-icon {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about-card h5 {
+    font-size: 0.95rem;
+}
+
+.about-card small {
+    font-size: 0.7rem;
+    color: white;
+}
+
+.about-content p {
+    margin: 2rem 0 2.6rem;
+    color: white;
 }
