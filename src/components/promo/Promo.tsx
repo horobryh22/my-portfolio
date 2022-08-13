@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-import { Col, Container, Row } from 'react-bootstrap';
-import { ArrowRightCircle, Download } from 'react-bootstrap-icons';
-import TrackVisibility from 'react-on-screen';
+import { Container, Row } from 'react-bootstrap';
 
 import './Promo.css';
 
 import 'animate.css';
 
-import headerImg from 'assets/img/header-img.svg';
+import { PromoAustronaut, PromoContent } from 'components';
 import { ReturnComponentType } from 'types';
 
 export const Promo = (): ReturnComponentType => {
@@ -55,69 +53,14 @@ export const Promo = (): ReturnComponentType => {
         return () => {
             clearInterval(ticker);
         };
-    }, [text]);
+    }, [tick]);
 
     return (
         <section className="banner" id="home">
             <Container>
-                <Row className="aligh-items-center">
-                    <Col xs={12} md={6} xl={7}>
-                        <TrackVisibility>
-                            {({ isVisible }) => (
-                                <div
-                                    className={
-                                        isVisible
-                                            ? 'animate__animated animate__fadeIn'
-                                            : ''
-                                    }
-                                >
-                                    <span className="tagline">
-                                        Welcome to my Portfolio
-                                    </span>
-                                    <h1>
-                                        Hi! I&apos;m Ilya <br />
-                                        <span
-                                            className="txt-rotate"
-                                            data-period="1000"
-                                            data-rotate='[ "Frontend Developer"]'
-                                        >
-                                            <span className="wrap">{text}</span>
-                                        </span>
-                                    </h1>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing
-                                        and typesetting industry. Lorem Ipsum has been the
-                                        standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and
-                                        scrambled it to make a type specimen book.
-                                    </p>
-                                    <div className="button-container">
-                                        <button className="custom-button" type="button">
-                                            Download CV <Download size={25} />
-                                        </button>
-                                        <button type="button" className="connect-button">
-                                            Let’s Connect <ArrowRightCircle size={25} />
-                                        </button>
-                                    </div>
-                                </div>
-                            )}
-                        </TrackVisibility>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <TrackVisibility>
-                            {({ isVisible }) => (
-                                <div
-                                    className={
-                                        isVisible
-                                            ? 'animate__animated animate__zoomIn'
-                                            : ''
-                                    }
-                                >
-                                    <img src={headerImg} alt="Header Img" />
-                                </div>
-                            )}
-                        </TrackVisibility>
-                    </Col>
+                <Row className="align-items-center">
+                    <PromoContent text={text} />
+                    <PromoAustronaut />
                 </Row>
             </Container>
         </section>
