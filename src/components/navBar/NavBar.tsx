@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import { Container, Navbar } from 'react-bootstrap';
-import './NavBar.css';
 
+import './NavBar.css';
 import logo from 'assets/img/header-logo.svg';
 import { PageLinks, SocialLinks } from 'components';
 import { ActiveLinkType, ReturnComponentType } from 'types';
@@ -34,6 +34,10 @@ export const NavBar = (): ReturnComponentType => {
         };
     });
 
+    const handleClick = (): void => {
+        document.location = '#connect';
+    };
+
     return (
         <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
             <Container>
@@ -50,7 +54,11 @@ export const NavBar = (): ReturnComponentType => {
                     />
                     <span className="navbar-text">
                         <SocialLinks />
-                        <button className="nvb-button" type="button">
+                        <button
+                            className="nvb-button"
+                            type="button"
+                            onClick={handleClick}
+                        >
                             <span>Let&apos;s Connect</span>
                         </button>
                     </span>
