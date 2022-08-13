@@ -1,0 +1,26 @@
+.about {
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+.about-bx {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -45px;
+    height: 700px;
+}
+
+.about h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.about p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
