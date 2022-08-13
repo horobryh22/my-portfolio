@@ -12,3 +12,7 @@ export { SkillsSlider } from './skills/skillsSlider/SkillsSlider';
 export { ProjectTabs } from './projects/projectTabs/ProjectTabs';
 export { ProjectTabsContent } from './projects/projectTabsContent/ProjectTabsContent';
 export { ProjectsContent } from './projects/projectsContent/ProjectsContent';
+export { ContactForm } from './contact/contactForm/ContactForm';
+export { Contact } from './contact/Contact';
+export { ContactImage } from './contact/contactImage/ContactImage';
+export { ContactContent } from './contact/conactContent/ContactContent';

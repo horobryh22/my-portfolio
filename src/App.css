@@ -102,7 +102,7 @@ p.danger {
 }
 .custom-button::before {
     content: "";
-    width: 0%;
+    width: 0;
     height: 100%;
     position: absolute;
     background-color: #fff;
