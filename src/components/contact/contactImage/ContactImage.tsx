@@ -12,7 +12,7 @@ export const ContactImage = (): ReturnComponentType => {
             <TrackVisibility>
                 {({ isVisible }) => (
                     <img
-                        className={isVisible ? 'animate__animated animate__zoomIn' : ''}
+                        className={isVisible ? 'animate__animated' : ''}
                         src={contactImg}
                         alt="Contact Us"
                     />

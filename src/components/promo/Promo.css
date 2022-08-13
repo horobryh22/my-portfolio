@@ -31,21 +31,23 @@
     line-height: 1.5em;
     width: 96%;
 }
-.banner .connect-button {
+.banner .button {
     color: #fff;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
+    width: 190px;
+    margin-right: 40px;
 }
-.banner .connect-button svg {
+.banner .button svg {
     font-size: 25px;
     margin-left: 10px;
     transition: 0.3s ease-in-out;
     line-height: 1;
 }
-.banner .connect-button:hover svg {
+.banner .button:hover svg {
     margin-left: 25px;
 }
 .banner img {
@@ -66,17 +68,8 @@
     border-right: 0.08em solid #666;
 }
 
-.banner .custom-button {
-    margin: 0 50px 0 0;
-}
-
-.banner .custom-button svg {
-    margin-left: 10px;
-}
-
 .banner .button-container {
     margin-top: 40px;
     display: flex;
-    align-items: center;
-}
 
+}

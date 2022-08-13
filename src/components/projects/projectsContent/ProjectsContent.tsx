@@ -10,7 +10,7 @@ export const ProjectsContent = (): ReturnComponentType => {
     return (
         <TrackVisibility>
             {({ isVisible }) => (
-                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
+                <div className={isVisible ? 'animate__animated' : ''}>
                     <h2>Projects</h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting

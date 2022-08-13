@@ -50,7 +50,7 @@ export const NavBar = (): ReturnComponentType => {
                     />
                     <span className="navbar-text">
                         <SocialLinks />
-                        <button className="custom-button" type="button">
+                        <button className="nvb-button" type="button">
                             <span>Let&apos;s Connect</span>
                         </button>
                     </span>
