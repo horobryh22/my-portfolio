@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import { Contact, NavBar, Projects, Promo, Skills } from 'components';
+import { Contact, Footer, NavBar, Projects, Promo, Skills } from 'components';
 import { ReturnComponentType } from 'types';
 
 const App = (): ReturnComponentType => {
@@ -14,6 +14,7 @@ const App = (): ReturnComponentType => {
             <Skills />
             <Projects />
             <Contact />
+            <Footer />
         </div>
     );
 };

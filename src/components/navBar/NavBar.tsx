@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Navbar } from 'react-bootstrap';
 import './NavBar.css';
 
-import logo from 'assets/img/logo.svg';
+import logo from 'assets/img/header-logo.svg';
 import { PageLinks, SocialLinks } from 'components';
 import { ActiveLinkType, ReturnComponentType } from 'types';
 

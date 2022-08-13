@@ -10,7 +10,7 @@ import { ReturnComponentType } from 'types';
 
 export const Projects = (): ReturnComponentType => {
     return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col size={12}>
