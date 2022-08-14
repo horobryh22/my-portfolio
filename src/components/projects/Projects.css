@@ -134,11 +134,18 @@
     letter-spacing: 0.8px;
 }
 
-.background-image-right {
-    top: 20%;
-    position: absolute;
-    bottom: 0;
-    width: 35%;
-    right: 0;
-    z-index: -4;
+
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+    .project p {
+        width: 100%;
+    }
+}
+
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+    .project .nav.nav-pills {
+        width: 100%;
+    }
 }

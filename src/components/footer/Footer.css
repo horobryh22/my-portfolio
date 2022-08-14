@@ -14,3 +14,13 @@
     letter-spacing: 0.5px;
     margin-top: 20px;
 }
+
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+
+    .footer .footer-logo {
+        display: none;
+    }
+
+}

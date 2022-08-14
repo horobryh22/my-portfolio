@@ -153,3 +153,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 100%;
     position: absolute;
 }
+
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+    nav.navbar a.navbar-brand {
+        display: none;
+    }
+
+    .social-icon {
+        display: none;
+    }
+
+    .navbar-text {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+    nav.navbar a.navbar-brand {
+        display: block;
+    }
+
+    .navbar-logo {
+        visibility: hidden;
+    }
+
+    .social-icon {
+        display: inline-block;
+    }
+}

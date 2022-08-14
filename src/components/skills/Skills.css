@@ -5,7 +5,7 @@
 }
 
 .skill-bx {
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(180deg, #AA367C -5.91%, #4A2FBD 111.58%);
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
@@ -22,6 +22,8 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+    text-align:justify;
+    text-indent: 30px;
 }
 
 .skill-slider {
@@ -50,6 +52,19 @@
 
 .react-multiple-carousel__arrow {
     margin-bottom: 40px;
+}
+
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+    .skill-bx {
+        padding: 50px 25px;
+    }
+
+    .skill-slider .item img {
+        width: 30%;
+        margin: 0 auto 15px auto;
+    }
 }
 
 

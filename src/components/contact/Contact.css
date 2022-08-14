@@ -68,3 +68,19 @@
 .contact form button:hover::before {
     width: 100%;
 }
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+    .contact h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contact form button {
+        padding: 14px 48px;
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

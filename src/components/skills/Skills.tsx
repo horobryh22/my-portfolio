@@ -17,8 +17,8 @@ export const Skills = (): ReturnComponentType => {
                             <h2>Skills</h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry.
-                                <br /> Lorem Ipsum has been the standard dummy text.
+                                typesetting industry. Lorem Ipsum has been the standard
+                                dummy text.
                             </p>
                             <SkillsSlider />
                         </div>

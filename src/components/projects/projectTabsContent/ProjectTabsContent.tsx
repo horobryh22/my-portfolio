@@ -4,7 +4,6 @@ import { Row, Tab } from 'react-bootstrap';
 
 import socialNetwork from 'assets/img/projects/social-network.webp';
 import { ProjectCard } from 'components/index';
-import { ProjectTabsContentType } from 'components/projects/projectTabsContent/types';
 import { ProjectType, ReturnComponentType } from 'types';
 
 const PROJECTS: ProjectType[] = [
@@ -46,18 +45,13 @@ const PROJECTS: ProjectType[] = [
     },
 ];
 
-export const ProjectTabsContent = ({
-    isVisible,
-}: ProjectTabsContentType): ReturnComponentType => {
+export const ProjectTabsContent = (): ReturnComponentType => {
     const mappedProjects = PROJECTS.map(project => {
         return <ProjectCard key={project.id} {...project} />;
     });
 
     return (
-        <Tab.Content
-            id="slideInUp"
-            className={isVisible ? 'animate__animated animate__slideInUp' : ''}
-        >
+        <Tab.Content id="slideInUp" className="animate__animated">
             <Tab.Pane eventKey="completed">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam,

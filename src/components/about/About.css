@@ -21,14 +21,6 @@
     margin-bottom: 40px;
 }
 
-.about p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-}
-
 .about-container {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -63,7 +55,7 @@
 
 .about-card {
     background: rgba(0, 0, 0, 0.41);
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
@@ -91,6 +83,55 @@
 }
 
 .about-content p {
-    margin: 2rem 0 2.6rem;
-    color: white;
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 75px 0 75px 0;
+    text-align:justify;
+    text-indent: 30px;
+}
+
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about-me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about-content p {
+        margin: 1rem 0 1.5rem
+    }
+}
+
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+
+    .about-bx {
+        padding: 50px 20px;
+    }
+
+    .about-me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content p {
+        margin: 1.5rem 0;
+    }
 }

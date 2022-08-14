@@ -18,3 +18,4 @@ export { ContactImage } from './contact/contactImage/ContactImage';
 export { ContactContent } from './contact/conactContent/ContactContent';
 export { Footer } from './footer/Footer';
 export { About } from './about/About';
+export { AboutContent } from './aboutContent/AboutContent';
