@@ -8,12 +8,14 @@ export type ProjectCardType = {
     title: string;
     description: string;
     imgUrl: string;
+    url: string;
 };
 
 export const ProjectCard = ({
     title,
     description,
     imgUrl,
+    url,
 }: ProjectCardType): ReturnComponentType => {
     return (
         <Col size={12} sm={6} md={4}>
@@ -22,8 +24,18 @@ export const ProjectCard = ({
                 <div className="proj-txtx">
                     <h4>{title}</h4>
                     <span>{description}</span>
+                    <button
+                        type="button"
+                        onClick={() => {
+                            window.open(url, '_blank');
+                        }}
+                    >
+                        Open
+                    </button>
                 </div>
             </div>
         </Col>
     );
 };
+
+window.open('https://www.codexworld.com', '_blank');

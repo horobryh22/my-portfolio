@@ -1,5 +1,5 @@
 .project {
-    padding: 100px 0;
+    padding: 100px 0 50px;
     position: relative;
     background-color: black;
     margin-top: -50px;
@@ -83,10 +83,18 @@
 }
 
 .proj-imgbx {
+    z-index: 10;
+    height: 90%;
     position: relative;
     border-radius: 30px;
     overflow: hidden;
-    margin-bottom: 24px;
+}
+
+.proj-imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
 }
 
 .proj-imgbx::before {

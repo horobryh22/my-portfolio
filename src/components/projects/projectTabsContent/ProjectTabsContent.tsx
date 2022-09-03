@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Row, Tab } from 'react-bootstrap';
 
+import flashcards from 'assets/img/projects/flashcards.png';
 import socialNetwork from 'assets/img/projects/social-network.webp';
 import { ProjectCard } from 'components/index';
 import { ProjectType, ReturnComponentType } from 'types';
@@ -9,39 +10,25 @@ import { ProjectType, ReturnComponentType } from 'types';
 const PROJECTS: ProjectType[] = [
     {
         id: 1,
-        title: 'Social Network',
-        description: 'Lorem  ',
-        imgUrl: socialNetwork,
+        title: 'Flashcards',
+        description:
+            'Flashcards for online training using the question-answer system with the ability to create your own training modules (card decks), as well as their expansion (creating new cards), editing and privacy settings',
+        imgUrl: flashcards,
+        url: 'https://horobryh22.github.io/flashcards/',
     },
     {
         id: 2,
         title: 'Business Startup',
         description: 'Design & Development',
         imgUrl: socialNetwork,
+        url: '',
     },
     {
         id: 3,
         title: 'Business Startup',
         description: 'Design & Development',
         imgUrl: socialNetwork,
-    },
-    {
-        id: 4,
-        title: 'Business Startup',
-        description: 'Design & Development',
-        imgUrl: socialNetwork,
-    },
-    {
-        id: 5,
-        title: 'Business Startup',
-        description: 'Design & Development',
-        imgUrl: socialNetwork,
-    },
-    {
-        id: 6,
-        title: 'Business Startup',
-        description: 'Design & Development',
-        imgUrl: socialNetwork,
+        url: '',
     },
 ];
 
