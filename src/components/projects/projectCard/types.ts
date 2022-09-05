@@ -1,7 +1,6 @@
 import { ReactElement } from 'react';
 
-export type ProjectType = {
-    id: number;
+export type ProjectCardType = {
     title: string;
     description: string | ReactElement;
     imgUrl: string;

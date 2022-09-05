@@ -3,6 +3,7 @@
     position: relative;
     background-color: black;
     margin-top: -50px;
+    height: 740px;
 }
 
 .project h2 {
@@ -30,6 +31,7 @@
 
 .project .nav.nav-pills .nav-item {
     width: 33.33333%;
+    z-index: 10;
 }
 
 .project .nav.nav-pills .nav-link {
@@ -84,7 +86,7 @@
 
 .proj-imgbx {
     z-index: 10;
-    height: 90%;
+    height: 300px;
     position: relative;
     border-radius: 30px;
     overflow: hidden;
@@ -112,7 +114,7 @@
 }
 
 .proj-txtx {
-    padding: 0 10px;
+    padding: 20px;
     position: absolute;
     text-align: center;
     top: 65%;
@@ -121,6 +123,11 @@
     transition: 0.5s ease-in-out;
     opacity: 0;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -140,6 +147,7 @@
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.8px;
+    text-align: justify;
 }
 
 

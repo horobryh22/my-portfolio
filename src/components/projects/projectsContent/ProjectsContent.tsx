@@ -10,10 +10,8 @@ export const ProjectsContent = (): ReturnComponentType => {
         <div className="animate__animated">
             <h2>Projects</h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type
-                specimen book.
+                Below are the projects that were developed by me using such technologies
+                like React, Redux, TypeScript, Jest, Redux Toolkit, React Native
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="active">
                 <Nav

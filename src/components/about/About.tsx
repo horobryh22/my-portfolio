@@ -3,7 +3,7 @@ import React from 'react';
 import './About.css';
 
 import background from 'assets/img/background/color-sharp.png';
-import me from 'assets/img/me/me-about.jpg';
+import me from 'assets/img/me/me.jpg';
 import { AboutContent } from 'components';
 import { ReturnComponentType } from 'types';
 

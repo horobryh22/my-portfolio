@@ -15,10 +15,11 @@ export const Skills = (): ReturnComponentType => {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the standard
-                                dummy text.
+                            <p style={{ textAlign: 'center' }}>
+                                At the moment, I am also studying such technologies like
+                                NextJS, React Native, Express, MongoDB, SSR, and more.
+                                <br /> I like to improve my skills and to know something
+                                new.
                             </p>
                             <SkillsSlider />
                         </div>
