@@ -4,3 +4,4 @@ export type { ActiveLinkType } from './ActiveLinkType';
 export type { LinkType } from './LinkType';
 export type { SkillType } from './SkillType';
 export type { ProjectType } from './ProjectType';
+export type { FormDataType } from './FormDataType';

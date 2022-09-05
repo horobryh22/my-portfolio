@@ -37,5 +37,3 @@ export const ProjectCard = ({
         </Col>
     );
 };
-
-window.open('https://www.codexworld.com', '_blank');

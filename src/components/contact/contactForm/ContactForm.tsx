@@ -3,18 +3,27 @@ import React, { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 
-import { FormDataType } from './types';
+import { ContactFromType } from './types';
 
-import { ReturnComponentType } from 'types';
+import { sendMail } from 'api';
+import { FormDataType, ReturnComponentType } from 'types';
 
-export const ContactForm = (): ReturnComponentType => {
-    const { register, handleSubmit } = useForm<FormDataType>();
-
-    const onSubmit = (data: FormDataType): void => {
-        console.log(data);
-    };
+export const ContactForm = ({ setIsDataSent }: ContactFromType): ReturnComponentType => {
+    const { register, handleSubmit, reset } = useForm<FormDataType>();
 
     const [buttonText] = useState('Send');
+
+    const onSubmit = (data: FormDataType): void => {
+        sendMail(data);
+        reset();
+    };
+
+    const handleClick = (): void => {
+        setIsDataSent(true);
+        setTimeout(() => {
+            setIsDataSent(false);
+        }, 6000);
+    };
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -33,7 +42,7 @@ export const ContactForm = (): ReturnComponentType => {
                 </Col>
                 <Col size={12} className="px-1">
                     <textarea {...register('message')} rows={6} placeholder="Message" />
-                    <button type="submit">
+                    <button type="submit" onClick={handleClick}>
                         <span>{buttonText}</span>
                     </button>
                 </Col>

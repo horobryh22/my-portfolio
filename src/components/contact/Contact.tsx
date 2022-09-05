@@ -11,7 +11,7 @@ export const Contact = (): ReturnComponentType => {
     return (
         <section className="contact" id="connect">
             <Container>
-                <Row className="align-items-center">
+                <Row className="align-items-flex-start">
                     <ContactImage />
                     <ContactContent />
                 </Row>

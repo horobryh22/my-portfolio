@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Col } from 'react-bootstrap';
-import TrackVisibility from 'react-on-screen';
 
-import { ContactForm } from 'components';
+import { ContactForm, HelperText } from 'components';
 import { ReturnComponentType } from 'types';
 
 export const ContactContent = (): ReturnComponentType => {
+    const [isDataSent, setIsDataSent] = useState(false);
+
     return (
-        <Col size={12} md={6}>
-            <TrackVisibility>
-                {({ isVisible }) => (
-                    <div className={isVisible ? 'animate__animated' : ''}>
+        <Col size={12} md={6} className="align-items-center">
+            <div>
+                {isDataSent ? (
+                    <HelperText />
+                ) : (
+                    <>
                         <h2>Get In Touch</h2>
-                        <ContactForm />
-                    </div>
+                        <ContactForm setIsDataSent={setIsDataSent} />
+                    </>
                 )}
-            </TrackVisibility>
+            </div>
         </Col>
     );
 };
