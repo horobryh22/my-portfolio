@@ -8,7 +8,7 @@ import { ReturnComponentType } from 'types';
 export const ContactImage = (): ReturnComponentType => {
     return (
         <Col size={12} md={6}>
-            <img src={contactImg} alt="Contact Us" />
+            <img className="main-img" src={contactImg} alt="Contact Us" />
         </Col>
     );
 };

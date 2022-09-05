@@ -4,9 +4,11 @@
     height: 615px;
 }
 
-.contact img {
+.contact .main-img {
+    margin-top: 50px;
     width: 92%;
 }
+
 .contact h2 {
     font-size: 45px;
     font-weight: 700;
@@ -72,8 +74,24 @@
     width: 100%;
 }
 
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+    .contact .main-img {
+        margin-top: 100px;
+    }
+}
+
 /* Media queries (Small devices) */
 @media screen and (max-width: 600px) {
+
+    .contact {
+        height:auto;
+    }
+
+    .contact .main-img {
+        margin: 0;
+    }
+
     .contact h2 {
         text-align: center;
         margin-top: 20px;

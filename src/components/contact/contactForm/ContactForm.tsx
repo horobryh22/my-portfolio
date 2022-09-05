@@ -41,7 +41,12 @@ export const ContactForm = ({ setIsDataSent }: ContactFromType): ReturnComponent
                     <input {...register('phone')} placeholder="Phone No." />
                 </Col>
                 <Col size={12} className="px-1">
-                    <textarea {...register('message')} rows={6} placeholder="Message" />
+                    <textarea
+                        {...register('message')}
+                        style={{ resize: 'none' }}
+                        rows={6}
+                        placeholder="Message"
+                    />
                     <button type="submit" onClick={handleClick}>
                         <span>{buttonText}</span>
                     </button>

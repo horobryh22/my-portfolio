@@ -19,3 +19,39 @@
 .text {
     font-size: 22px;
 }
+
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        align-items: flex-start;
+    }
+}
+
+/* Media queries (Small devices) */
+@media screen and (max-width: 600px) {
+
+    .wrapper {
+        padding: 0 20px;
+        margin-top: 30px;
+        align-items: flex-start;
+    }
+
+    .imageWrapper {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        position: relative;
+    }
+
+    .imageWrapper img {
+        position: absolute;
+        right: -12px;
+        top: 3px;
+    }
+
+    .text {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
