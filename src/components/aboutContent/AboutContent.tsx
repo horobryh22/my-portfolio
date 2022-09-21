@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Award, FolderCheck, People } from 'react-bootstrap-icons';
+import { Award, Apple, FolderCheck } from 'react-bootstrap-icons';
 
 import { ReturnComponentType } from 'types';
 
@@ -11,12 +11,12 @@ export const AboutContent = (): ReturnComponentType => {
                 <article className="about-card">
                     <Award className="about-icon" />
                     <h5>Experience</h5>
-                    <small>1+ Years Working</small>
+                    <small>8+ months</small>
                 </article>
                 <article className="about-card">
-                    <People className="about-icon" />
-                    <h5>Clients</h5>
-                    <small>200+ Worldwide</small>
+                    <Apple className="about-icon" />
+                    <h5>Technologies</h5>
+                    <small>10+ were learned</small>
                 </article>
                 <article className="about-card">
                     <FolderCheck className="about-icon" />
@@ -25,10 +25,11 @@ export const AboutContent = (): ReturnComponentType => {
                 </article>
             </div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserunt
-                ipsam itaque maiores provident quia similique voluptas! Ad adipisci
-                dolorem, dolores eaque nemo nulla perspiciatis praesentium repudiandae
-                suscipit tempore vel!
+                Hi there! I&apos;m frontend developer with experience in building
+                single-page applications, based on React.js, Redux.js with Typescript. I
+                focus on code quality, following trends, learning new technologies and
+                improving my hard skills and English. I open for full-time/part-time
+                remote or hybrid work and new frameworks (Angular, Vue).
             </p>
         </div>
     );

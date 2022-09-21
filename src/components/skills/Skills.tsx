@@ -17,7 +17,7 @@ export const Skills = (): ReturnComponentType => {
                             <h2>Skills</h2>
                             <p style={{ textAlign: 'center' }}>
                                 At the moment, I am also studying such technologies like
-                                NextJS, React Native, Express, MongoDB, SSR, and more.
+                                React Native, Webpack, Express, MongoDB, SSR, and more.
                                 <br /> I like to improve my skills and to know something
                                 new.
                             </p>

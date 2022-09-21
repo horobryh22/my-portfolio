@@ -13,7 +13,7 @@ export const ProjectsContent = (): ReturnComponentType => {
                 Below are the projects that were developed by me using such technologies
                 like React, Redux, TypeScript, Jest, Redux Toolkit, React Native
             </p>
-            <Tab.Container id="projects-tabs" defaultActiveKey="active">
+            <Tab.Container id="projects-tabs" defaultActiveKey="completed">
                 <Nav
                     variant="pills"
                     className="nav-pills mb-5 justify-content-center align-items-center"
