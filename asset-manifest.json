@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.3e32f898.css",
-    "main.js": "/my-portfolio/static/js/main.34bcf397.js",
+    "main.js": "/my-portfolio/static/js/main.eb654fb3.js",
     "static/js/787.1ed0c42c.chunk.js": "/my-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/color-sharp.png": "/my-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/social-network.png": "/my-portfolio/static/media/social-network.b4d71ec2515435a008fa.png",
@@ -27,8 +27,8 @@
     "static/media/storybook.svg": "/my-portfolio/static/media/storybook.8a832d47b79c123d2a86dba22a324290.svg",
     "static/media/git.svg": "/my-portfolio/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
     "static/media/success.svg": "/my-portfolio/static/media/success.be7c5034058e2dc3ad88051af1af3f9f.svg",
-    "index.html": "/my-portfolio/index.html",
     "static/media/icon_linkedin.svg": "/my-portfolio/static/media/icon_linkedin.721d5414c26365f117e71d46b6641cb2.svg",
+    "index.html": "/my-portfolio/index.html",
     "static/media/eslint.svg": "/my-portfolio/static/media/eslint.fa9d89802d89963d9000f20d523e8689.svg",
     "static/media/vercel.svg": "/my-portfolio/static/media/vercel.e5648f3f431a79d172f36f28018e9fd2.svg",
     "static/media/CentraNo2-Bold.ttf": "/my-portfolio/static/media/CentraNo2-Bold.31d6cfe0d16ae931b73c.ttf",
@@ -36,11 +36,11 @@
     "static/media/CentraNo2-Medium.ttf": "/my-portfolio/static/media/CentraNo2-Medium.31d6cfe0d16ae931b73c.ttf",
     "static/media/cv.pdf": "/my-portfolio/static/media/cv.31d6cfe0d16ae931b73c.pdf",
     "main.3e32f898.css.map": "/my-portfolio/static/css/main.3e32f898.css.map",
-    "main.34bcf397.js.map": "/my-portfolio/static/js/main.34bcf397.js.map",
+    "main.eb654fb3.js.map": "/my-portfolio/static/js/main.eb654fb3.js.map",
     "787.1ed0c42c.chunk.js.map": "/my-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e32f898.css",
-    "static/js/main.34bcf397.js"
+    "static/js/main.eb654fb3.js"
   ]
 }
