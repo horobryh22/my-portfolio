@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { PromoTextType } from 'components/promo/promoText/types';
+import { PromoTextType } from './types';
+
 import { ReturnComponentType } from 'types';
 
 export const PromoText = ({ text }: PromoTextType): ReturnComponentType => {
@@ -17,10 +18,7 @@ export const PromoText = ({ text }: PromoTextType): ReturnComponentType => {
                     <span className="wrap">{text}</span>
                 </span>
             </h1>
-            <p>
-                I&apos;m from Russia and I really like programming! You can see my CV
-                below and we&apos;ll get to know each other better!
-            </p>
+            <p />
         </>
     );
 };

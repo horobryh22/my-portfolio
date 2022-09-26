@@ -13,16 +13,13 @@ export const ContactForm = ({ setIsDataSent }: ContactFromType): ReturnComponent
 
     const [buttonText] = useState('Send');
 
-    const onSubmit = (data: FormDataType): void => {
-        sendMail(data);
-        reset();
-    };
-
-    const handleClick = (): void => {
+    const onSubmit = async (data: FormDataType): Promise<void> => {
+        await sendMail(data);
         setIsDataSent(true);
         setTimeout(() => {
             setIsDataSent(false);
         }, 6000);
+        reset();
     };
 
     return (
@@ -47,7 +44,7 @@ export const ContactForm = ({ setIsDataSent }: ContactFromType): ReturnComponent
                         rows={6}
                         placeholder="Message"
                     />
-                    <button type="submit" onClick={handleClick}>
+                    <button type="submit">
                         <span>{buttonText}</span>
                     </button>
                 </Col>
